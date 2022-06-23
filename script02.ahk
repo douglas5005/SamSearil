@@ -16,6 +16,8 @@ $^a::
 SoundBeep, 700, 500
 sleep, 250
 SoundBeep, 1100, 500
+InputBox, var, título, Digite algo
+msgbox, você digitou %var%
 return
 
 ~1 & 2::
