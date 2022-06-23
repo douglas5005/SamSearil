@@ -1,8 +1,9 @@
-﻿;
+﻿;   Conteúdo:
+;
 ;   Condições IF,
-;       indentação, pra não ficar monolítico
-;   Mandar cliques
-;   Loops
+;       indentação, pra legibilidade
+;       Mandar cliques
+;   Loops usando o comando Loop
 ;
 
 f12::ExitApp
@@ -44,5 +45,4 @@ $5::
             send {enter}
         }
 return
-
 

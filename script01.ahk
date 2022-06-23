@@ -1,5 +1,8 @@
 ﻿;
 ;   Variáveis
+;   Os dois jeitos de guardar conteúdo em variável
+;   Os dois jeitos de escrever os comandos
+;   Continhas usando as variáveis
 ;
 
 ; Guardar texto
@@ -27,7 +30,7 @@ var3 := var1 + var2
 msgbox, % var3
 msgbox, % var3 * 5
 
-msgbox, % "10 * 10 = " 10 * 10 
+msgbox, % "var1 * 10 = " var1 * 10 
 msgbox, % "10 / 5 = " 10 / 5
 msgbox, % "2 ^ 6 = " 2 ** 6
 

@@ -1,5 +1,17 @@
-﻿;
-;   Hotkeys e Comandos
+﻿;   Conteúdo:
+;
+;   > Hotkeys e alguns Comandos
+;       - run
+;       - sleep
+;       - send
+;       - soundbeep
+;       - inputbox
+;   
+;   > Problemas com hotkeys
+;       - falta do $ em hotkeys que usam SEND
+;       - hotkeys "combo" travando teclas quando sem o ~
+;
+;   > Importância de uma Hotkey de Encerramento
 ;
 
 a::             ; não ensinar a colocar o $ ainda e deixar dar erro no próximo SEND
