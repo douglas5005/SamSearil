@@ -1,8 +1,9 @@
-﻿;
-;   Variáveis
-;   Os dois jeitos de guardar conteúdo em variável
-;   Os dois jeitos de escrever os comandos
-;   Continhas usando as variáveis
+﻿;   Conteúdo:
+;
+;   - Variáveis
+;   - Comando msgbox
+;   - Os dois jeitos de guardar conteúdo em variável
+;   - Continhas usando as variáveis
 ;
 
 ; Guardar texto
@@ -19,7 +20,7 @@ pessoa := "SamSearil"
 linguagem := "AHK"
 script_n := 1
 
-msgbox, % pessoa " está escrevendo em " linguagem ", e esse continua sendo o " script_n "º script"
+msgbox %pessoa% está escrevendo em %linguagem%, e esse ainda é o %script_n%º script
 
 ; Continhas
 
@@ -34,6 +35,6 @@ msgbox, % "var1 * 10 = " var1 * 10
 msgbox, % "10 / 5 = " 10 / 5
 msgbox, % "2 ^ 6 = " 2 ** 6
 
-; ahk documentation
+; documentação do AHK
 ; https://www.autohotkey.com/docs/AutoHotkey.htm
 

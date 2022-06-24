@@ -1,9 +1,10 @@
 ﻿;   Conteúdo:
 ;
-;   Condições IF,
-;       indentação, pra legibilidade
-;       Mandar cliques
-;   Loops usando o comando Loop
+;   - Condições IF,
+;       ■ caixa de login + senha
+;   - indentação, pra legibilidade
+;   - Mandar cliques
+;   - Loops usando o comando Loop
 ;
 
 f12::ExitApp
