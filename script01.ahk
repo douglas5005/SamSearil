@@ -6,11 +6,15 @@
 ;   - Continhas usando as variáveis
 ;
 
-; Guardar valores com = (coisas bem simples) 
+; Guardar valores dentro de uma palavra com " = " (só para coisas bem simples) 
+;   (o nome disso é "variável")
 
 pessoa = Sam
 linguagem = AutoHotKey
 script_n = 1
+
+; Usando o comando msgbox para mostrar texto na tela. 
+; Para falar para o AHK que tem alguma coisa dentro de uma palavra
 
 msgbox %pessoa% começou a aprender %linguagem%, e esse é o %script_n%º script
 
