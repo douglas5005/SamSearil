@@ -44,15 +44,15 @@ $3::
     return
 
 $4::
-    var := 7
     texto := ""
     i := 1
     while (i <= 200)
     {
+        var := i * 7
         texto := texto . var . ", "
-        var := var + 7
         i++
     }
+    
     msgbox %texto%
     return
 

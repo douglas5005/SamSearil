@@ -1,4 +1,8 @@
 ﻿;   Conteúdo:
+;  
+;   mais expressões com variáveis
+;       var := var + 1
+;       var++
 ;
 ;   - Condições IF / Else
 ;       ■ caixa de login + senha
@@ -7,9 +11,45 @@
 
 $f12::ExitApp        ; Tecla de Emergência
 
-; Exemplo de IF
+
+; Algumas continhas pra mostrar que uma variável pode receber ela mesma
 
 $1::
+    var1 := 5
+    var2 := 10
+    var3 := var1 + var2     ; uma variável pode receber outras variáveis
+    msgbox %var3%
+
+    var3 := var3            ; e uma variável pode receber ela mesma!!! (...uau?)
+    msgbox %var3%
+
+    var1 := 30
+    var1 := var1 + 20       ; o lance é que ela pode receber _uma expressão_ que involve a si própria (ah, agora sim show~)
+    msgbox %var1%
+
+    numero := 123
+    numero++                     ; numero++  é a mesma coisa que digitar:
+    msgbox %numero%              ; numero := numero + 1
+    
+
+
+    return
+
+
+; exemplo de uma tecla que fala quantas vezes você apertou ela
+
+teclaDois := 0      ; a gente declara o valor inicial da variável antes da hotkey!
+$2::
+    teclaDois++
+    msgbox você apertou essa tecla %teclaDois% vezes desde que o script começou
+    return
+
+
+; exemplo
+
+; Exemplo de IF
+
+$4::
     InputBox, valor1 , teste, Digite um número  ; IF verifica se o que está na frente é verdade, e se for, executa o código que está
     if (valor1 = 5)                             ;   envolvido entre as chaves { e }
     {
@@ -21,7 +61,7 @@ $1::
 
 ; Exemplo de IF / Else
 
-$2::
+$5::
     inputbox, valor2, teste Digite alguma coisa
     if (valor2 = "Sam")
     {
@@ -39,7 +79,7 @@ $2::
 ;       e que fecha sozinho se você errar a senha 3 vezes
 ;
 
-$3::
+$6::
     InputBox, valor , teste, Digite a senha     
     if (valor = "AutoHotKey")    
     {
