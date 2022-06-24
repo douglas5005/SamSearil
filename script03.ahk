@@ -49,14 +49,14 @@ $3::
     }               
     Else
     {
-        tentativa := tentativa + 1
+        tentativa++
         msgbox a senha não é %valor%
         msgbox você errou a senha %tentativa% vez(es)
 
-        if (tentativa => 3)
+        if (tentativa >= 3)
             {
                 msgbox limite de tentativas alcançado
-                msgbox fechando programa
+                msgbox fechando script
                 Exitapp
             }
     }
