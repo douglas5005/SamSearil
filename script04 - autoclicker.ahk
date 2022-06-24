@@ -1,11 +1,12 @@
 ﻿;   Conteúdo:
 ;   
-;   Loop usando While
-;   autoclicker
+;   - mandar cliques com o comando Click
+;   - como conseguir a posição do mouse com o comando MouseGetPos
+;   - Loop usando While
 ;
 
 f12::ExitApp
 
-f1::
+$1::
     
-return
+    return
